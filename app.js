@@ -23,7 +23,7 @@ addBtn.addEventListener('click', () => {
   view.render(tasks, currentFilter);
 });
 
-// Handle delete / toggle
+// Handle delete
 list.addEventListener('click', e => {
   const id = e.target.closest('li')?.dataset.id;
   if (!id) return;
@@ -48,3 +48,4 @@ filters.forEach(btn => {
     view.render(tasks, currentFilter);
   });
 });
+
